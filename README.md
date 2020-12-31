@@ -61,6 +61,6 @@
       
 
   ## Links
-  *[GitHub]()
-  *[GitHub]()
+  *[GitHub](https://github.com/AbuyeM1/Daily-Planner) <br>
+  *[GitHub.io](https://abuyem1.github.io/Daily-Planner/) <br>
   *[LinkedIn](https://www.linkedin.com/in/abuye-mamuye-5a49921b0/)

@@ -1,14 +1,19 @@
-//  declaration for day and time 
+
 $(document).ready(function () {
 
     //console.log("hello");
-    var now = moment();
-
     var update = function () {
         $("#currentDay").html(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
+        var now = moment();
+        var beforTime = moment();
+        var beforTime = moment().startOf("day").add(9, "hours");
+
     }
-    setInterval(update, 1000);
+
+   setInterval(update, 1000);
+   /*
+   // for set click event each button
     $("form9").click(function () {
         localStorage.one = ($("#block1")).val();
     })
@@ -35,8 +40,53 @@ $(document).ready(function () {
     })
     $("form5").click(function () {
         localStorage.nine = ($("#block9")).val();
+        console.log("nine");
     })
+     
+    // afunction call on the page
+    var remeber = function () {
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        var block1 = localStorage.one;
+        $("#block1").val(form1);
+        
+        //console.log("block1");
+    }
+    function colors() {
+        var time = moment().format("H");
+        var textFram = ("#time1", "#time2", "#time3", "#time4", "#time5", "#time6", "#time7", "#time8", "#time9");
+        for (var i = 0; i < textFram.length; i++);
+        var currentTime = i + 9;
+        if (time < currentTime) {
+            $(textFram[i]).att("future");
+
+        }
+        else if (text > currentTime) {
+            $(textFram[i]).att("past");
+        }
+
+
+        else $(textFram[i]).att("present"); {
+        }
+
+
+        colors();
+        remeber();
+    }
+*/
+});
 
 
 
-})

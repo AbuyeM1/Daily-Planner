@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
-    //
-var times = [9, 10, 11, 12, 1, 2, 3, 4,5];
-for (var i =0; i < times.length; i++) {
+
+   var times = [9, 10, 11, 12, 1, 2, 3, 4,5];
+    for (var i =0; i < times.length; i++) {
     var dataHour = localStorage.getItem(times[i]);
     $(".form" + times[i]).val(dataHour);
     //console.log("times");
@@ -10,7 +10,7 @@ for (var i =0; i < times.length; i++) {
 
 
 // event listener for localstorage
-$(".saveBtn").click(function() {
+    $(".saveBtn").click(function() {
     event.preventDefault();
     var formValue = $(this).siblings(".form-control").val()
     $(".form" + times[i]).val(dataHour);
@@ -21,8 +21,9 @@ $(".saveBtn").click(function() {
 
 
 //console.log("hello");
-    // A function the current time and date
-    var update = function (date) {
+// A function the current time and date
+    
+var update = function (date) {
         $("#currentDay").html(moment().format('MMMM Do YYYY, h:mm:ss a'));
    var currentTime = moment();
    currentTime = currentTime.startOf("hour");

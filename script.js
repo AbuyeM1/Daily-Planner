@@ -33,7 +33,7 @@ $(document).ready(function () {
   })
   // for color function
   function updateColors() {
-    var currentTime = new  moment().hour();
+    var currentTime = new moment().hour();
     console.log(currentTime);
   
     $(".input-group-lg").each(function(){

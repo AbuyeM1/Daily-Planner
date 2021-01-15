@@ -18,47 +18,38 @@
  ## Code Snaippet
   ### HTML
   
-     <div class="container">
-    <!-- 9AM timeblocks goes here -->
-    <div class="input-group input-group-lg" data-hour="9">
-      <div class="input-group-prepend">
-        <span class="input-group-text time-block block1"></span>
+        <div class="input-group input-group-lg"  data-hour="9">
+               <div class="input-group-prepend">
+              <span class="input-group-text time-block" >09:00 AM</span>
       </div>
-      <input type="text" class="form-control form9" aria-label="Large">
-      <button class="btn saveBtn"><i class="far fa-save"></i></button>
+              <input type="text" class="form-control" id="block1" aria-label="Large">
+             <button class="btn saveBtn"><i class="far fa-save"></i></button>
     </div>
-  
-  
-  
-  
-  
-  
-  
+
+   
   
   ## Javascript
 
-      moment(Date);
-      $("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm a'));
-      // Moment Current time 
-       var currentTime = moment();
+      //display local storage data to screen
+       $("#block1").val(localStorage.getItem("9"));
 
-      currentTime = currentTime.startOf("hour");
-     // Calculates the start of day + 9 to return 9 am
-     var beforeTime = moment().startOf('day').add(9, "hours");
+      $("#block2").val(localStorage.getItem("10"));
 
-     // Time blocks
-      // 9 AM 
-         var time1 = beforeTime.add(0, "h");
-       // var time1 = beforeTime;
-         time1 = time1.format('hh:mm A');
-     // Add time formula into html
-       $(".block1").text(time1);
-       // 10 AM
-       var time2 = beforeTime.add(1, "h");
-    time2 = time2.format('hh:mm A');
-    // Add time formula into html
-    $(".block2").text(time2);
-      
+      $("#block3").val(localStorage.getItem("11"));
+
+      $("#block4").val(localStorage.getItem("12"));
+
+      $("#block5").val(localStorage.getItem("13"));
+
+     $("#block6").val(localStorage.getItem("14"));
+
+     $("#block7").val(localStorage.getItem("15"));
+
+    $("#block8").val(localStorage.getItem("16"));
+
+    $("#block9").val(localStorage.getItem("17"));
+
+
 
   ## Links
   *[GitHub](https://github.com/AbuyeM1/Daily-Planner) <br>

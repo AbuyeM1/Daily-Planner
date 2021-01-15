@@ -42,19 +42,22 @@ body {
     color: #000000;
     border-top: 1px dashed #000000;
   }
+  .form-control{
+    background-color: #d3d3d3;
+  }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #ccc9c9;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: #b82119;
     color: rgb(255, 255, 255);
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #37ca37;
     color: white;
   }
   

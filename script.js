@@ -33,7 +33,7 @@ $(document).ready(function () {
   })
   // for color function
   function updateColors() {
-    var currentTime = new moment().hour();
+    var currentTime =  moment().hour();
     console.log(currentTime);
   
     $(".input-group-lg").each(function(){
@@ -55,23 +55,23 @@ $(document).ready(function () {
   
 
   //display local storage data to screen
-  $("#form9").val(localStorage.getItem("9"));
+  $("#block1").val(localStorage.getItem("9"));
 
-  $("#form10").val(localStorage.getItem("10"));
+   $("#block2").val(localStorage.getItem("10"));
 
-  $("#form11").val(localStorage.getItem("11"));
+  $("#block3").val(localStorage.getItem("11"));
 
-  $("#form12").val(localStorage.getItem("12"));
+  $("#block4").val(localStorage.getItem("12"));
 
-  $("#form1").val(localStorage.getItem("1"));
+  $("#block5").val(localStorage.getItem("13"));
 
-  $("#form2").val(localStorage.getItem("2"));
+  $("#block6").val(localStorage.getItem("14"));
 
-  $("#form3").val(localStorage.getItem("3"));
+  $("#block7").val(localStorage.getItem("15"));
 
-  $("#form4").val(localStorage.getItem("4"));
+  $("#block8").val(localStorage.getItem("16"));
 
-  $("#form5").val(localStorage.getItem("5"));
+  $("#block9").val(localStorage.getItem("17"));
 
 
   updateColors();

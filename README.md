@@ -10,10 +10,9 @@
 
 ## Images
 
- ![alt text](https://lh3.googleusercontent.com/bvItvheREk1nWZEtHm3U-TaWDJtKfWFKl-VX4qpf3TfjxENmzkeccFYMY9byloW1j6l4=s500)
+ ![alttext](https://lh3.googleusercontent.com/V2cB66mWLE4HlTCnqwQkESdP7B5f-yr4tnrJ2p_Iq9cuLpnMyMHfFxJMUB3KcfTeNqCo=s500)
  
- ![alt text](https://lh3.googleusercontent.com/4X_STNHsEoLI5AoAMzhLTT_cS_AwTxcPOjnVr_qXRlUfx2kbk1C5vvg9R94bHOkjrDG1Bg=s500)
- 
+
 
  ## Code Snaippet
   ### HTML

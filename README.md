@@ -1,22 +1,21 @@
 # Day Planner
- This is a Day planer scheduler project with local time and updates live.
- This project has moment.js for local time,current time and individual hours.
- 
+
+This is a Day planer scheduler project with local time and updates live.
+This project has moment.js for local time,current time and individual hours.
 
 ## Summary
 
-* HTML,CSS and Javascript document create a day planner with 8 hurs work day
-* This project used of moment.js for time calculation and formatting conversion
+- HTML,CSS and Javascript document create a day planner with 8 hurs work day
+- This project used of moment.js for time calculation and formatting conversion
 
-## Images
+## Video
 
- ![alttext](https://lh3.googleusercontent.com/V2cB66mWLE4HlTCnqwQkESdP7B5f-yr4tnrJ2p_Iq9cuLpnMyMHfFxJMUB3KcfTeNqCo=s500)
- 
+![Video](./Assets/image/video.gif)
 
+## Code Snaippet
 
- ## Code Snaippet
-  ### HTML
-  
+### HTML
+
         <div class="input-group input-group-lg"  data-hour="9">
                <div class="input-group-prepend">
               <span class="input-group-text time-block" >09:00 AM</span>
@@ -25,9 +24,7 @@
              <button class="btn saveBtn"><i class="far fa-save"></i></button>
     </div>
 
-   
-  
-  ## Javascript
+## Javascript
 
       //display local storage data to screen
        $("#block1").val(localStorage.getItem("9"));
@@ -48,9 +45,7 @@
 
     $("#block9").val(localStorage.getItem("17"));
 
+## Links
 
-
-  ## Links
-  *[GitHub](https://github.com/AbuyeM1/Daily-Planner) <br>
-  *[GitHub.io](https://abuyem1.github.io/Daily-Planner/) <br>
-  *[LinkedIn](https://www.linkedin.com/in/abuye-mamuye-5a49921b0/)
+_[GitHub](https://github.com/AbuyeM1/Daily-Planner) <br>
+_[GitHub.io](https://abuyem1.github.io/Daily-Planner/) <br> \*[LinkedIn](https://www.linkedin.com/in/abuye-mamuye-5a49921b0/)

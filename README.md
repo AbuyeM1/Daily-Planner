@@ -1,51 +1,79 @@
 # Day Planner
 
+## Table of Contents
+
+- [Description](#description)
+
+- [Deployed Link](#deployed-link)
+
+- [CodeSnippets](#CodeSnippets)
+
+- [License](#license)
+
+- [TechnonlogyUse](#Technonlogy-Use)
+
+- [Question](#Question)
+
+## Description
+
 This is a Day planer scheduler project with local time and updates live.
 This project has moment.js for local time,current time and individual hours.
-
-## Summary
-
-- HTML,CSS and Javascript document create a day planner with 8 hurs work day
-- This project used of moment.js for time calculation and formatting conversion
 
 ## Video
 
 ![Video](./Assets/image/video.gif)
 
+## Deployed Link
+
+[Deployed Link](https://abuyem1.github.io/Daily-Planner/)
+
+## TechnonlogyUse
+
+- HTML
+- CSS
+- Moment.js
+- JavaScript
+
 ## Code Snaippet
 
 ### HTML
 
-        <div class="input-group input-group-lg"  data-hour="9">
-               <div class="input-group-prepend">
-              <span class="input-group-text time-block" >09:00 AM</span>
+       <div class="input-group input-group-lg" data-hour="10">
+        <div class="input-group-prepend input-group-text">
+          <span class="input-group-text time-block">10:00 AM</span>
+        </div>
+
+        <input
+          type="text"
+          class="form-control"
+          id="block2"
+          aria-label="large"
+        />
+        <button class="btn saveBtn btn-outline-success">
+          <i class="far fa-save"></i>
+        </button>
       </div>
-              <input type="text" class="form-control" id="block1" aria-label="Large">
-             <button class="btn saveBtn"><i class="far fa-save"></i></button>
-    </div>
 
 ## Javascript
 
-      //display local storage data to screen
-       $("#block1").val(localStorage.getItem("9"));
+      $(".saveBtn").click(function () {
+    console.log($(this).siblings("input").val());
 
-      $("#block2").val(localStorage.getItem("10"));
+    console.log($(this).parent().attr("data-hour"));
+    time = $(this).parent().attr("data-hour");
+    task = $(this).siblings("input").val();
 
-      $("#block3").val(localStorage.getItem("11"));
+    localStorage.setItem(time, task);
+    });
 
-      $("#block4").val(localStorage.getItem("12"));
+## License
 
-      $("#block5").val(localStorage.getItem("13"));
+![badge](https://shields.io/badge/license-MIT-green)
 
-     $("#block6").val(localStorage.getItem("14"));
+## Question
 
-     $("#block7").val(localStorage.getItem("15"));
+- [Email](mailto:Abuye20@yahoo.com)
 
-    $("#block8").val(localStorage.getItem("16"));
+- [LinkedIn](https://www.linkedin.com/in/abuye-mamuye-5a49921b0/)
 
-    $("#block9").val(localStorage.getItem("17"));
-
-## Links
-
-_[GitHub](https://github.com/AbuyeM1/Daily-Planner) <br>
-_[GitHub.io](https://abuyem1.github.io/Daily-Planner/) <br> \*[LinkedIn](https://www.linkedin.com/in/abuye-mamuye-5a49921b0/)
+- [GitHub](https://github.com/AbuyeM1)

@@ -8,7 +8,7 @@ $(document).ready(function () {
     var beforeTime = moment().startOf("day").add(9, "hours");
   };
   setInterval(update, 1000);
-
+  // set up localStorage
   localStorage.getItem(time);
   var time;
   var task;
